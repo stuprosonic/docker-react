@@ -1,0 +1,6 @@
+sudo: required
+services:
+  - docker
+
+before-install:
+  - docker build -stuprosonic/docker-react -f Dockerfile.dev .
